@@ -31,3 +31,12 @@ nav .container-fluid{
     float: left;
     color: red;
 }
+
+
+.nav-mobile .botton {
+    border: none;
+}
+
+button {
+    border: none !important;
+}
