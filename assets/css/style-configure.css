@@ -1,0 +1,33 @@
+@media screen and (max-width: 991px) {
+    /* Untuk mengatur kemunculan */
+    .nav-mobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .nav-mobile {
+        display: none;
+    }
+}
+
+/* untuk mengatur navbar paling atas*/
+nav .container-fluid{
+    display: block;
+    background-color: #f4f3ef;
+    height: auto;
+} 
+
+.display-pop-up-01 {
+    display: none;
+}
+
+.display-pop-up-02 {
+    display: none;
+}
+
+.drop-menu-01 span{
+    float: left;
+    color: red;
+}

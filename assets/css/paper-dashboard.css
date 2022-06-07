@@ -1817,7 +1817,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   .documentation .navbar.fixed-top {
     left: 0;
     width: initial; }
-  .navbar .navbar-wrapper {
+  .navbar .navbar-wrapper { /* =============================== */
     display: inline-flex;
     align-items: center; }
     .navbar .navbar-wrapper .navbar-minimize {
@@ -3817,7 +3817,7 @@ License - nucleoapp.com/license/
   .card-stats .icon-big i {
     line-height: 59px; }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) { /* aturan untuk navbar */
   .navbar {
     padding: 0; }
     .navbar.navbar-absolute {
@@ -4195,7 +4195,7 @@ License - nucleoapp.com/license/
   .login-page .container {
     padding-top: 100px !important; } }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .navbar[class*='navbar-toggleable-'] .container {
     margin-left: 0;
     margin-right: 0; }
