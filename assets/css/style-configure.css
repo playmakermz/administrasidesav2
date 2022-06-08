@@ -1,0 +1,67 @@
+@media screen and (max-width: 991px) {
+    /* Untuk mengatur kemunculan */
+    .nav-mobile {
+        display: block;
+    }
+
+    /* Mengatur papan berita */
+    .row.justify-content-center.margin-up{
+    margin-top: -0.2em;
+    margin-left: -5em;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+
+    .nav-mobile {
+        display: none;
+    }
+    
+}
+
+/* untuk mengatur navbar paling atas*/
+nav .container-fluid{
+    display: block;
+    background-color: #f4f3ef;
+    height: auto;
+} 
+
+.display-pop-up-01 {
+    display: none;
+}
+
+.display-pop-up-02 {
+    display: none;
+}
+
+.drop-menu-01 span{
+    float: left;
+    color: red;
+}
+
+/* Mengatur card "berita teratas" */
+
+.container .card {
+    margin-bottom: 0px;
+}
+
+.container .card h4 {
+    margin-top: 0px
+}
+
+.text-muted.text-capitalize.margin-up {
+    margin-top: 3em;
+}
+
+/* Memberikan jarak antar car */
+.space-between .card {
+    margin: 2em;
+}
+
+/* Untuk ketingian aplikasi */
+.application-dev .d-flex{
+    display: inline-block;
+    width: 0em;
+    max-height: 5em;
+}
