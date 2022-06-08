@@ -56,7 +56,7 @@
 						</a>
 					</li>
 					<li>
-						<a data-toggle="collapse" href="#Informasi" class="collapsed" aria-expanded="false">
+						<a data-toggle="collapse" href="#Informasi" class="collapsed" aria-expanded="false"> <!-- ================================ Tiru Ini ======================== -->
 							<i class="nc-icon nc-alert-circle-i"></i>
 							<p>Informasi<span class="caret"></span></p>
 						</a>
@@ -178,7 +178,7 @@
 									<div class="offcanvas-body">
 										<ul class="list-group list-group-flush">
 											<li class="list-group-item">
-												<a href="#">
+												<a href="<?= base_url('') ?>">
 													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
 														fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
 														<path
@@ -213,11 +213,21 @@
 												<div id="display-pop-up-01" class="display-pop-up-01">
 													<!-- ================================== Dropdown Satu opada Menu ============================== -->
 													<ul class="list-group list-group-flush">
-														<li class="list-group-item">Profil</li>
-														<li class="list-group-item">Aparatur</li>
-														<li class="list-group-item">Fasilitas Umum</li>
-														<li class="list-group-item">Galeri</li>
-														<li class="list-group-item">Potensi Desa</li>
+														<li class="list-group-item">
+															<a href="<?= base_url('Profile') ?>">Profile</a>
+														</li>
+														<li class="list-group-item">
+															<a href="<?= base_url('Aparatur') ?>">Aparatur</a>
+														</li>
+														<li class="list-group-item">
+															<a href="<?= base_url('Fasilitas') ?>">Fasilitas Umum</a>
+														</li>
+														<li class="list-group-item">
+															<a href="<?= base_url('Galeri') ?>">Galeri</a>
+														</li>
+														<li class="list-group-item">
+															<a href="<?= base_url('Potensi') ?>">Potensi Desa</a>
+														</li>
 													</ul>
 												</div>
 											</li>
@@ -247,10 +257,18 @@
 
 												<div id="display-pop-up-02" class="display-pop-up-02">
 													<ul class="list-group list-group-flush">
-														<li class="list-group-item">Pendidikan</li>
-														<li class="list-group-item">Kependudukan</li>
-														<li class="list-group-item">Kesejahteraan</li>
-														<li class="list-group-item">Keuangan Desa</li>
+														<li class="list-group-item">
+															<a href="<?= base_url('Pendidikan') ?>">Pendidikan</a>
+														</li>
+														<li class="list-group-item">
+															<a href="<?= base_url('Kependudukan') ?>">Kependudukan</a>
+														</li>
+														<li class="list-group-item">
+															<a href="<?= base_url('Profile/Kesejahteraan') ?>">Kesejahteraan</a>
+														</li>
+														<li class="list-group-item">
+															<a href="<?= base_url('Profile/Keudes') ?>">Keuangan Desa</a>
+														</li>
 													</ul>
 												</div>
 
@@ -263,13 +281,15 @@
 														<path
 															d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
 													</svg>
-													Peraturan Desa
+													<a href="<?= base_url('Profile/Peraturan') ?>">Peraturan Desa</a>
+													
 												</a>
 											</li>
 											<!-- Akhiran -->
 											<li class="list-group-item">
 												<i class="nc-icon nc-planet"></i>
-												COVID-19
+												<a href="https://corona.kendalkab.go.id/">COVID-19</a>
+												
 											</li>
 											<!-- Akhiran -->
 										</ul>

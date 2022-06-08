@@ -24,6 +24,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/administrasidesav2/';
+$config['base_url'] = 'http://localhost/Frontendv2/';
 
 /*
 |--------------------------------------------------------------------------
