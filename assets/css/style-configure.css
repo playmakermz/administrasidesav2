@@ -1,3 +1,4 @@
+/* Untuk Mobile Size */
 @media screen and (max-width: 991px) {
     /* Untuk mengatur kemunculan */
     .nav-mobile {
@@ -9,10 +10,15 @@
     margin-top: -0.2em;
     margin-left: -5em;
     }
+
+    .navbar-for-pc {
+        display: none;
+    }
     
 }
 
-@media screen and (min-width: 992px) {
+/* Untuk Pc size */
+@media screen and (min-width: 992px) { 
 
     .nav-mobile {
         display: none;
@@ -64,4 +70,44 @@ nav .container-fluid{
     display: inline-block;
     width: 0em;
     max-height: 5em;
+}
+
+/* Main page Navbar paling atas*/
+.navbar {
+    padding: 0;
+    margin-top: -0.25em;
+}
+
+.navbar.navbar-transparent {
+    border: 0px;
+}
+
+/* Navbar kiri untuk pc */
+.navbar-for-pc {
+    margin-left: -2em;
+}
+.navbar-for-pc ul{
+    list-style-type: none;
+}
+.navbar-for-pc li {
+    /* margin-right: 1em; */
+    float: left;
+    padding: 12px;
+}
+
+/* Untuk logo pada navbar */
+.logo-responsive {
+    height: 100%;
+    width: 4em;
+    float: left;
+}
+
+.second-navbar .container-fluid {
+    color: #fff9f3;
+    background-color: #66615b;
+}
+
+/* Mengatur jarak main content */
+.main-panel > .content {
+    /* margin-top: 3.5em; */
 }

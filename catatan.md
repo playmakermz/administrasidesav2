@@ -139,3 +139,66 @@
 				</div>
 			</footer>
 ```
+
+```
+<div class="collapse navbar-collapse justify-content-end" id="navigation">
+						<div class="main-navbar-left">
+							<ul>
+								<li>i</li>
+								<li>i</li>
+								<li>i</li>
+								<li>i</li>
+								<li>i</li>
+								<li>i</li>
+								<li>i</li>
+								<li>i</li>
+							</ul>
+						</div>
+						<form>
+							<div class="input-group no-border">
+								<input type="text" value="" class="form-control" placeholder="Search...">
+								<div class="input-group-append">
+									<div class="input-group-text">
+										<i class="nc-icon nc-zoom-split"></i>
+									</div>
+								</div>
+							</div>
+						</form>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link btn-rotate" href="javascript:;" title="Login">
+									<i class="nc-icon nc-circle-10"></i>
+									<p>
+										<span class="d-lg-none d-md-block"
+											href="http://kumpulrejo.desa.id/dashbord/login">Login</span>
+									</p>
+								</a>
+							</li>
+					</div>
+			</nav>
+```
+### Navbar Pertama, login dan search 
+```
+<div class="collapse navbar-collapse justify-content-end" id="navigation">
+						<form>
+							<div class="input-group no-border">
+								<input type="text" value="" class="form-control" placeholder="Search...">
+								<div class="input-group-append">
+									<div class="input-group-text">
+										<i class="nc-icon nc-zoom-split"></i>
+									</div>
+								</div>
+							</div>
+						</form>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link btn-rotate" href="javascript:;" title="Login">
+									<i class="nc-icon nc-circle-10"></i>
+									<p>
+										<span class="d-lg-none d-md-block"
+											href="http://kumpulrejo.desa.id/dashbord/login">Login</span>
+									</p>
+								</a>
+							</li>
+					</div>
+```

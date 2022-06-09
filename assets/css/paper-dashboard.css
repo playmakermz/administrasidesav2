@@ -3816,7 +3816,7 @@ License - nucleoapp.com/license/
   min-height: 64px; }
   .card-stats .icon-big i {
     line-height: 59px; }
-
+/* ===================================================== Untuk device mobile ke bawah ================================================================== */
 @media screen and (max-width: 991px) { /* aturan untuk navbar */
   .navbar {
     padding: 0; }
@@ -4103,7 +4103,7 @@ License - nucleoapp.com/license/
     padding-left: 21px; }
   .footer .credits {
     padding-right: 15px; } }
-
+/* =============================================================== Untuk size besar seperti komputer ============================================================ */
 @media screen and (min-width: 992px) {
   .navbar-collapse {
     background: none !important; }
