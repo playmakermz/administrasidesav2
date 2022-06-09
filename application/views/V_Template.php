@@ -15,6 +15,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 	<!-- CSS Files -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -42,8 +45,8 @@
 					<p style='padding:1em;'>
 						<img src="<?= base_url('assets/img/Desa-Logo.png') ?>" class='logo-responsive'
 							alt="Italian Trulli">
-						Desa KUMPULREJO 		<br>
-						Kec. PATEBON , Kab. Kendal
+						<b class='title-font-size'>Desa KUMPULREJO <br>
+						Kec. PATEBON , Kab. Kendal</b>
 					</p>
 					</a>
 					<div class=" navbar-collapse" id="navbarSupportedContent">
@@ -58,14 +61,14 @@
 									</div>
 								</div>
 							</form>
-							<ul class="navbar-nav">
+							<ul class="navbar-nav login-link">
 								<li class="nav-item">
-									<a class="nav-link btn-rotate" href="javascript:;" title="Login">
-										<i class="nc-icon nc-circle-10"></i>
-										<p>
-											<span class="d-lg-none d-md-block"
-												href="http://kumpulrejo.desa.id/dashbord/login">Login</span>
-										</p>
+									<a class="nav-link btn-rotate" href="javascript:;" title="Login"
+										href="http://kumpulrejo.desa.id/dashbord/login">
+										<b class='login-link'>
+											<a href="http://kumpulrejo.desa.id/dashbord/login"><i
+													class="nc-icon nc-circle-10"></i> Login</a>
+										</b>
 									</a>
 								</li>
 						</div>
@@ -81,42 +84,57 @@
 					<div class="navbar-for-pc">
 						<ul>
 							<li>
-								<a href="">Beranda</a>
+								<a href="<?= base_url('') ?>">Beranda</a>
 							</li>
 							<li style='padding:0;'>
 								<!-- Untuk  dropdown 1 -->
 								<div class="btn-group">
 									<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
 										data-bs-toggle="dropdown" aria-expanded="false">
-										Small button
+										Informasi
 									</button>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Action</a></li>
-										<li><a class="dropdown-item" href="#">Another action</a></li>
-										<li><a class="dropdown-item" href="#">Something else here</a></li>
+										<li>
+											<a href="<?= base_url('Profile') ?>">Profile</a>
+										</li>
+										<li>
+											<a href="<?= base_url('Aparatur') ?>">Aparatur</a>
+										</li>
+										<li>
+											<a href="<?= base_url('Fasilitas') ?>">Fasilitas Umum</a>
+										</li>
+										<li><a href="<?= base_url('Galeri') ?>">Galeri</a></li>
+										<li><a href="<?= base_url('Potensi') ?>">Potensi Desa</a></li>
 									</ul>
 							</li>
+							<!-- Untuk  dropdown 2 -->
 							<li style='padding:0;'>
-								<!-- Untuk  dropdown 1 -->
+
 								<div class="btn-group">
 									<button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
 										data-bs-toggle="dropdown" aria-expanded="false">
-										Small button
+										Data
 									</button>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Action</a></li>
-										<li><a class="dropdown-item" href="#">Another action</a></li>
-										<li><a class="dropdown-item" href="#">Something else here</a></li>
+										<li>
+											<a href="<?= base_url('Pendidikan') ?>">Pendidikan</a>
+										</li>
+										<li>
+											<a href="<?= base_url('Kependudukan') ?>">Kependudukan</a>
+										</li>
+										<li><a href="<?= base_url('Profile/Kesejahteraan') ?>">Kesejahteraan</a></li>
+										<li><a href="<?= base_url('Profile/Keudes') ?>">Keuangan Desa</a></li>
 									</ul>
 							</li>
 							<li>
-								<a href="">Peraturan Desa</a>
+								<a href="<?= base_url('Profile/Peraturan') ?>">Peraturan Desa</a>
 							</li>
-							<li>
-								<a href="">COVID-19</a>
-							</li>
+
 							<li>
 								<a href="https://dokar.kendalkab.go.id/dashbord/public_dashbord">DOKAR-Dashboard</a>
+							</li>
+							<li>
+								<a href="https://corona.kendalkab.go.id/">COVID-19</a>
 							</li>
 						</ul>
 					</div>
@@ -260,11 +278,16 @@
 										</li>
 										<!-- Akhiran -->
 										<li class="list-group-item">
+											<i class="bi bi-door-open-fill"></i>
+											<a
+												href="https://dokar.kendalkab.go.id/dashbord/public_dashbord">DOKAR-Dashboard</a>
+										</li>
+										<!-- Akhiran -->
+										<li class="list-group-item">
 											<i class="nc-icon nc-planet"></i>
 											<a href="https://corona.kendalkab.go.id/">COVID-19</a>
 
 										</li>
-										<!-- Akhiran -->
 									</ul>
 
 								</div>
@@ -274,12 +297,7 @@
 					<a class="navbar-brand" href="javascript:;"></a>
 				</div>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-					aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-bar navbar-kebab"></span>
-					<span class="navbar-toggler-bar navbar-kebab"></span>
-					<span class="navbar-toggler-bar navbar-kebab"></span>
-				</button>
+
 				<!-- ============================================== Mengatur navbar pertama ========================================= -->
 
 		</nav>
@@ -289,9 +307,66 @@
 		<div class="content">
 			<?php echo $contents ?>
 		</div>
+		<!-- Footer start -->
+		<div class="foter-set">
+			<div class="footer-main-flex">
+				<div>
+					<img src="http://kumpulrejo.desa.id/upload/umum/Logo.png" class="logo-responsive"
+						alt="Desa KumpulRejo">
+					<span class='span-for-mobile'>
+						<b>Desa KUMPULREJO
+						Kec. PATEBON , Kab. Kendal</b>
+						Jln. Raden Patah KM 3.5 Desa Kumpulrejo Kecamatan Patebon Kabupaten Kendal
+						+6281325924983 +6281938635777
+						kumpulrejo.patebonkendal@gmail.com
+					</span>
+				</div>
 
-		<!-- footer start-->
+				<div class='span-for-mobile-on'>
+					<b>Desa KUMPULREJO
+						Kec. PATEBON , Kab. Kendal</b>
+						Jln. Raden Patah KM 3.5 Desa Kumpulrejo Kecamatan Patebon Kabupaten Kendal
+						+6281325924983 +6281938635777
+						kumpulrejo.patebonkendal@gmail.com
+				</div>
 
+				<div>
+					<b class='footer-title'>Pengunjung</b> <br>
+					TOTAL <br>
+					0000339300 <br>
+					BULAN INI <br>
+					0000010235 <br>
+					ONLINE <br>
+					0006 <br>
+				</div>
+
+				<div>
+					<b class='footer-title'>Our Social Media</b> <br>
+					<a href=""><i class="bi bi-facebook"></i> Facebook</a> <br>
+					<a href=""><i class="bi bi-twitter"></i> Twitter</a> <br>
+					<a href=""><i class="bi bi-instagram"></i> Instagram</a> <br>
+					<a href=""><i class="bi bi-youtube"></i>youtube</a> <br>
+					<a href=""><i class="bi bi-book-half"></i>Blog</a> <br>
+				</div>
+
+				<div>
+					<!-- <h3></h3> -->
+					<b class='footer-title'>Tautan Terkait</b>
+					<br>
+					<a href=""><img src="https://www.lapor.go.id/themes/lapor/assets/images/logo.png" alt=""
+							style="color : #fff; width: 46px;"> Lapor.go.id</a> <br>
+					<a href="http://www.kendalkab.go.id" target="_blank">
+						&nbsp; <img src="https://www.kendalkab.go.id/images/dashboard/logo.png" alt=""
+							style="color : #fff; width: 25px;">&nbsp;&nbsp;&nbsp;KendalKab</a> <br>
+					<a href="http://www.diskominfo.kendalkab.go.id" target="_blank">
+						<img src="http://kumpulrejo.desa.id/assets/images/kominfo.png" alt=""
+							style="color : #fff; width: 35px;">&nbsp;&nbsp;&nbsp;Diskominfo</a> <br>
+					<a href="http://kecpatebon.kendalkab.go.id/" target="_blank">
+						&nbsp; <img src="https://www.kendalkab.go.id/images/dashboard/logo.png" alt=""
+							style="color : #fff; width: 25px;">&nbsp;&nbsp;&nbsp;Patebon</a> <br>
+				</div>
+			</div>
+		</div>
 		<!-- footer end -->
 	</div>
 	</div>

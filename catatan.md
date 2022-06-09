@@ -202,3 +202,43 @@
 							</li>
 					</div>
 ```
+
+## Menu pada navbar kanan
+```
+			<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+					aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-bar navbar-kebab"></span>
+					<span class="navbar-toggler-bar navbar-kebab"></span>
+					<span class="navbar-toggler-bar navbar-kebab"></span>
+				</button> -->
+```
+
+```
+.all_news span {
+    border-radius: 0px;
+    /* -webkit-linear-gradient(top, rgba(0, 75, 103, 1) 0%, rgba(0, 53, 72, 1) 100%) */
+    padding: 10px;
+}
+
+#all_news {
+    /* -webkit-box-shadow: none; */
+    box-shadow: none;
+    height: 34px;
+}
+
+.top_news span {
+    border-radius: 0px;
+    /* -webkit-linear-gradient(top, rgba(0, 75, 103, 1) 0%, rgba(0, 53, 72, 1) 100%) */
+    background: -webkit-linear-gradient(top, rgb(255 0 0) 0%, rgb(255 0 0) 100%);
+    padding: 10px;
+}
+
+#top_news {
+     /* -webkit-box-shadow: none; */
+    box-shadow: none;
+    height: 34px;
+}
+
+
+
+```
