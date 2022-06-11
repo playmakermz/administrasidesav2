@@ -125,8 +125,6 @@
 			</button>
 		</div>
 
-		<!-- <h6 class="text-muted text-capitalize margin-up">Berita Teratas</h6> -->
-
 		<!-- papan pengumuman -->
 		<div class="row justify-content-center margin-up">
 			<div id="all_news" class="all_news"> <span>Pengumuman</span>

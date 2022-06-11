@@ -28,3 +28,23 @@ function reMenu02() {
    var x = document.getElementById("display-pop-up-02").style.display = 'none';
 }
 
+// Dropdown 3
+function dropMenu03() {
+  var x = document.getElementById("display-pop-up-03").style.display = 'block';
+  document.getElementById('re-drop-03').style.display = "block";
+}
+
+function reMenu03() {
+   var x = document.getElementById("display-pop-up-03").style.display = 'none';
+}
+
+// Dropdown 4
+function dropMenu04() {
+  var x = document.getElementById("display-pop-up-04").style.display = 'block';
+  document.getElementById('re-drop-04').style.display = "block";
+}
+
+function reMenu04() {
+   var x = document.getElementById("display-pop-up-04").style.display = 'none';
+}
+

@@ -1,6 +1,5 @@
-/* Untuk Mobile Size */
 @media screen and (max-width: 991px) {
-    /* Untuk mengatur kemunculan */
+     /* Untuk mengatur kemunculan */
     .nav-mobile {
         display: block;
     }
@@ -29,8 +28,7 @@
     }
 }
 
-/* Untuk Pc size */
-@media screen and (min-width: 992px) { 
+@media screen and (min-width: 992px) {
 
     .span-for-mobile-on{
     display: none;
@@ -38,7 +36,6 @@
     .nav-mobile {
         display: none;
     }
-    
 }
 
 /* untuk mengatur navbar paling atas*/
@@ -48,11 +45,20 @@ nav .container-fluid{
     height: auto;
 } 
 
+/* Display pop up dropdown */
 .display-pop-up-01 {
     display: none;
 }
 
 .display-pop-up-02 {
+    display: none;
+}
+
+.display-pop-up-03 {
+    display: none;
+}
+
+.display-pop-up-04 {
     display: none;
 }
 
@@ -75,6 +81,7 @@ nav .container-fluid{
     margin-top: 3em;
 }
 
+
 /* Memberikan jarak antar car */
 .space-between .card {
     margin: 2em;
@@ -85,51 +92,6 @@ nav .container-fluid{
     display: inline-block;
     width: 0em;
     max-height: 5em;
-}
-
-/* Main page Navbar paling atas*/
-.navbar {
-    padding: 0;
-    margin-top: -0.25em;
-}
-
-.navbar.navbar-transparent {
-    border: 0px;
-}
-
-/* Navbar kiri untuk pc */
-.navbar-for-pc {
-    margin-left: -2em;
-}
-.navbar-for-pc ul{
-    list-style-type: none;
-}
-.navbar-for-pc li {
-    /* margin-right: 1em; */
-    float: left;
-    padding: 12px;
-}
-
-/* Untuk logo pada navbar */
-.logo-responsive {
-    height: 100%;
-    width: 4em;
-    float: left;
-}
-
-.second-navbar .container-fluid {
-    color: #fff9f3;
-    background-color: #66615b;
-}
-
-/* Mengatur jarak main content */
-.main-panel > .content {
-    /* margin-top: 3.5em; */
-}
-
-/* Mengatur pading login */
-.navbar-expand-lg .navbar-nav{
-    padding: 1em;
 }
 
 /* Mengatur footer */
@@ -199,6 +161,26 @@ nav .container-fluid{
     font-size: 1.5em;
 }
 
+/* Mengatur Navbar dropdown */
+.collapsible-pc {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
+.active, .collapsible-pc:hover {
+  background-color: #555;
+}
 
-
+.content-pc {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
